@@ -1,2 +1,1 @@
-#no classwork
-print("no classwork")
+#დავალება არ მქონდა
