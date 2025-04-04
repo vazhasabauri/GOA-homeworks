@@ -1,0 +1,6 @@
+friend=zaqaria
+
+print(friend)
+
+
+
