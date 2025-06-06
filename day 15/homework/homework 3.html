@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>სარეგისტრაციო ფორმა</title>
+</head>
+<body>
+
+  <h2>სარეგისტრაციო ფორმა</h2>
+
+  <!-- ფორმის დაწყება. მონაცემები გაიგზავნება POST მეთოდით -->
+  <form action="submit.php" method="post">
+
+    <!-- სახელი. name="firstname" არის მონაცემის იდენტიფიკატორი სერვერზე გაგზავნისას -->
+    <label for="firstname">სახელი:</label>
+    <input type="text" id="firstname" name="firstname" required>
+    <br><br>
+
+    <!-- გვარი. name="lastname" განსაზღვრავს გაგზავნილ მონაცემს -->
+    <label for="lastname">გვარი:</label>
+    <input type="text" id="lastname" name="lastname" required>
+    <br><br>
+
+    <!-- ქვეყანა ჩამოსაშლელი მენიუდან. name="country" იქნება არჩეული ქვეყნის მნიშვნელობა -->
+    <label for="country">ქვეყანა:</label>
+    <select id="country" name="country" required>
+      <!-- ნაგულისხმევად არჩეულია საქართველო -->
+      <option value="ge" selected>საქართველო</option>
+      <option value="us">აშშ</option>
+      <option value="de">გერმანია</option>
+      <option value="fr">საფრანგეთი</option>
+      <option value="jp">იაპონია</option>
+    </select>
+    <br><br>
+
+    <!-- დადასტურების ღილაკი, რომელიც აგზავნის ფორმას -->
+    <button type="submit">დადასტურება</button>
+
+  </form>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

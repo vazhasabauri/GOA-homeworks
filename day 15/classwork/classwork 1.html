@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+
+    <form action="/submit" method="post">
+        <!-- სახელის ველი. name ატრიბუტი გამოიყენება მონაცემის დასახელებისთვის სერვერზე გაგზავნისას -->
+        <input type="text" name="first_name" placeholder="First Name" required><br><br>
+
+        <!-- გვარის ველი. აუცილებლად შესავსები ველია -->
+        <input type="text" name="last_name" placeholder="Last Name" required><br><br>
+
+        <!-- ქვეყნის drop-down მენიუ. საჭიროა აირჩიოს მომხმარებელმა ერთ-ერთი ოთხიდან -->
+        <select name="country" required>
+            <option value="">Select Country</option> <!-- საწყისი ცარიელი არჩევანი -->
+            <option value="georgia">Georgia</option>
+            <option value="usa">United States</option>
+            <option value="germany">Germany</option>
+            <option value="france">France</option>
+        </select><br><br>
+
+        <!-- დადასტურების ღილაკი. ფორმა გაგზავნის მონაცემებს მითითებულ მისამართზე -->
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
